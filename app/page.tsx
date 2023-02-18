@@ -1,8 +1,8 @@
-import Link from "next/link";
+// import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="py-8">
+    <main className="bg-red-600">
       <h1>home</h1>
     </main>
   );
