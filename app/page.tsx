@@ -1,13 +1,20 @@
+"use client";
 import Link from "next/link";
+// import React, { useState } from "react";
 
 async function getPosts() {
-  const res = await fetch("/api/routes");
-  const data = await res.json();
-  console.log(data);
+  const res = await fetch("http://localhost:3000/api/routes");
+  // const data = await res.json();
+  // return data;
+  if (!res.ok) {
+    console.log(res);
+  }
+  return await res.json();
 }
 
-export default function Home() {
-  const test = getPosts();
+export default async function Home() {
+  const data = await getPosts();
+  console.log("DATA:::::::::::::::::::::::::::::.:", data);
   return (
     <main>
       <Link
