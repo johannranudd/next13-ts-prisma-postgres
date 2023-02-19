@@ -1,6 +1,8 @@
 1. `npx create-next-app@latest`
-2. `npm install -D tailwindcss postcss autoprefixer`
-3. `npx tailwindcss init -p`
+
+### tailwind
+
+https://tailwindcss.com/docs/guides/nextjs 2. `npm install -D tailwindcss postcss autoprefixer` 3. `npx tailwindcss init -p`
 
 ```
 <!-- tailwind config -->
@@ -19,3 +21,9 @@ module.exports = {
 };
 
 ```
+
+https://tailwindcomponents.com/cheatsheet/
+
+### prisma
+
+https://railway.app/new
