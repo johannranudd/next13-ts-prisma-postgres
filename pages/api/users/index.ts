@@ -24,17 +24,19 @@ export default async function handler(
     }
   }
   if (req.method === "POST") {
-    try {
-      const data = await prisma.user.create({
-        data: req.body,
-      });
-      return res.status(200).json(data);
-    } catch (error) {
-      console.log(
-        error,
-        "and error occured in user/routes handler() / method: POST"
-      );
-      return res.status(500).send({ message: error });
-    }
+    console.log("REQ.BODY:: ", req.body);
+    //   try {
+    //     const data = await prisma.user.create({
+    //       data: req.body,
+    //     });
+    // return res.status(200).json(data);
+    //   } catch (error) {
+    //     console.log(
+    //       error,
+    //       "and error occured in user/routes handler() / method: POST"
+    //     );
+    //     return res.status(500).send({ message: error });
+    //   }
+    return res.status(200);
   }
 }

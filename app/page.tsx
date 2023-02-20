@@ -1,4 +1,4 @@
-// "use client";
+import Form from "../components/forms/form";
 import Link from "next/link";
 // import React, { useState } from "react";
 
@@ -12,7 +12,7 @@ async function getPosts() {
 
 export default async function Home() {
   const data: { id: number; title: string }[] = await getPosts();
-  console.log("DATA:::::::::::::::::::::::::::::.:", data);
+  // console.log("DATA:::::::::::::::::::::::::::::.:", data);
   return (
     <main>
       <Link
@@ -21,6 +21,7 @@ export default async function Home() {
       >
         Go to dashboard
       </Link>
+      <Form />
     </main>
   );
 }
