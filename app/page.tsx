@@ -3,7 +3,7 @@ import Link from "next/link";
 // import React, { useState } from "react";
 
 async function getPosts() {
-  const res = await fetch(`${process.env.BASE_URL}/api/posts/routes`);
+  const res = await fetch(`${process.env.BASE_URL}/api/posts`);
   if (!res.ok) {
     console.log("res not ok in getPosts()", res);
   }
