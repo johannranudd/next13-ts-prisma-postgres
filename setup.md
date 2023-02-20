@@ -27,3 +27,10 @@ https://tailwindcomponents.com/cheatsheet/
 ### prisma
 
 https://railway.app/new
+
+- start project
+
+`npm install typescript ts-node @types/node -D`
+`npm install prisma -D`
+`npx prisma init`
+`npx prisma migrate dev`
